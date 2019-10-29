@@ -22,7 +22,7 @@ _makegconfig=
 # NUMA is optimized for multi-socket motherboards.
 # A single multi-core CPU actually runs slower with NUMA enabled.
 # See, https://bugs.archlinux.org/task/31187
-_NUMAdisable
+_NUMAdisable=
 
 # Compile ONLY used modules to VASTLYreduce the number of modules built
 # and the build time.
