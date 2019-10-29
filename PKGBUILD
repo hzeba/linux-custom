@@ -48,7 +48,7 @@ _1k_HZ_ticks=
 
 pkgbase=linux-git
 pkgver=v5.4.rc5.r1.g8005803a2ca0
-_srcname=linux-git
+_srcname=linux
 pkgrel=1
 arch=('x86_64')
 url="http://www.kernel.org/"
