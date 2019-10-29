@@ -47,7 +47,7 @@ _1k_HZ_ticks=
 ### Do not edit below this line unless you know what you're doing
 
 pkgbase=linux-git
-pkgver=v5.4.rc5.r1.g8005803a2ca0
+pkgver=v5.4.rc5.r19.g8005803a2ca0
 _srcname=linux
 pkgrel=1
 arch=('x86_64')
@@ -68,7 +68,8 @@ source=("git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"
         '99-linux.hook'
          # standard config files for mkinitcpio ramdisk
         'linux.preset'
-        'for-next.patch')
+        'for-next.patch'
+        'io_uring.patch')
 
 _kernelname=${pkgbase#linux}
 : ${_kernelname:=-next}
@@ -365,4 +366,5 @@ sha512sums=('SKIP'
             '2718b58dbbb15063bacb2bde6489e5b3c59afac4c0e0435b97fe720d42c711b6bcba926f67a8687878bd51373c9cf3adb1915a11666d79ccb220bf36e0788ab7'
             '8742e2eed421e2f29850e18616f435536c12036ff793f5682a3a8c980cf5dbfc88d17fd9539c87de15d9e4663dc3190f964f18a4722940465437927b6052abbf'
             '2dc6b0ba8f7dbf19d2446c5c5f1823587de89f4e28e9595937dd51a87755099656f2acec50e3e2546ea633ad1bfd1c722e0c2b91eef1d609103d8abdc0a7cbaf'
+            'SKIP'
             'SKIP')
