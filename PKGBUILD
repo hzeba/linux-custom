@@ -47,7 +47,7 @@ _1k_HZ_ticks=
 ### Do not edit below this line unless you know what you're doing
 
 pkgbase=linux-git
-pkgver=20191029.r0.g60c1769a45f4
+pkgver=v5.4.rc5.r1.g8005803a2ca0
 _srcname=linux-git
 pkgrel=1
 arch=('x86_64')
