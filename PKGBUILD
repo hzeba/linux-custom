@@ -57,7 +57,7 @@ options=('!strip')
 makedepends=('kmod' 'inetutils' 'bc' 'libelf' 'git' 'python-sphinx' 'python-sphinx_rtd_theme'
              'graphviz' 'imagemagick')
 
-source=("git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"
+source=('git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git'
          # the main kernel config files
         'config'
          # pacman hook for depmod
@@ -67,9 +67,7 @@ source=("git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"
          # pacman hook for remove initramfs
         '99-linux.hook'
          # standard config files for mkinitcpio ramdisk
-        'linux.preset'
-        'for-next.patch'
-        'io_uring.patch')
+        'linux.preset')
 
 _kernelname=${pkgbase#linux}
 : ${_kernelname:=-next}
@@ -365,6 +363,4 @@ sha512sums=('SKIP'
             '6b57a66b870b2f525e2dedd8f224b89474fd4ec6ea18484b0a67a1a2b9a4fc95d025cac181504406ea42a35d6c1b184c0d4e38c92815022935fc55746c69c7c1'
             '2718b58dbbb15063bacb2bde6489e5b3c59afac4c0e0435b97fe720d42c711b6bcba926f67a8687878bd51373c9cf3adb1915a11666d79ccb220bf36e0788ab7'
             '8742e2eed421e2f29850e18616f435536c12036ff793f5682a3a8c980cf5dbfc88d17fd9539c87de15d9e4663dc3190f964f18a4722940465437927b6052abbf'
-            '2dc6b0ba8f7dbf19d2446c5c5f1823587de89f4e28e9595937dd51a87755099656f2acec50e3e2546ea633ad1bfd1c722e0c2b91eef1d609103d8abdc0a7cbaf'
-            'SKIP'
-            'SKIP')
+            '2dc6b0ba8f7dbf19d2446c5c5f1823587de89f4e28e9595937dd51a87755099656f2acec50e3e2546ea633ad1bfd1c722e0c2b91eef1d609103d8abdc0a7cbaf')
