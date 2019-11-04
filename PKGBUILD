@@ -46,7 +46,7 @@ _1k_HZ_ticks=
 
 ### Do not edit below this line unless you know what you're doing
 
-pkgbase=linux-git
+pkgbase=linux-custom
 pkgver=v5.4.rc5.r19.g8005803a2ca0
 _srcname=linux
 pkgrel=1
@@ -241,7 +241,7 @@ _package() {
 
 _package-headers() {
    pkgdesc="Header files and scripts for building modules for ${pkgbase/linux/Linux} kernel"
-   depends=('linux-git')
+   depends=('linux-custom')
 
   cd $_srcname
   local builddir="$pkgdir/usr/lib/modules/$(<version)/build"
@@ -321,7 +321,7 @@ _package-headers() {
 
 _package-docs() {
     pkgdesc="Kernel hackers manual - HTML documentation that comes with the ${pkgbase/linux/Linux} kernel"
-    depends=('linux-git')
+    depends=('linux-custom')
 
   cd $_srcname
   local builddir="$pkgdir/usr/lib/modules/$(<version)/build"
