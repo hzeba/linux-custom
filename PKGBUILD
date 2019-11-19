@@ -47,7 +47,7 @@ _1k_HZ_ticks=
 ### Do not edit below this line unless you know what you're doing
 
 pkgbase=linux-custom
-pkgver=v5.4.rc5.r19.g8005803a2ca0
+pkgver=v5.4.rc8.r0.gaf42d3466bdc
 _srcname=linux
 pkgrel=1
 arch=('x86_64')
