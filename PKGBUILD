@@ -47,7 +47,7 @@ _1k_HZ_ticks=
 ### Do not edit below this line unless you know what you're doing
 
 pkgbase=linux-custom
-pkgver=v5.4.rc8.r0.gaf42d3466bdc
+pkgver=v5.6.r12281.g5d30bcacd91a
 _srcname=linux
 pkgrel=1
 arch=('x86_64')
@@ -66,7 +66,8 @@ source=('git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git'
          # pacman hook for remove initramfs
         '99-linux.hook'
          # standard config files for mkinitcpio ramdisk
-        'linux.preset')
+        'linux.preset'
+        'for-next.patch')
 
 _kernelname=${pkgbase#linux}
 : ${_kernelname:=-next}
@@ -326,8 +327,9 @@ for _p in "${pkgname[@]}"; do
 done
 
 sha512sums=('SKIP'
-            'be67775c821dc89749ffc921ba11f33d6f707b561e1a9c09d9cabc39c42133507d7a4a142d3642e2f51393d52b9842710ad358c18f9f14280c0d188331e0282f'
+            '6a9bfb99cbafad5dd1d7835b0e5b4571913a126b9d160c0516b8c15187a852c449d86360b414d8a249b9a43ec8e7ae8bc9365e3cbcda9c953fb5791949356280'
             '6b57a66b870b2f525e2dedd8f224b89474fd4ec6ea18484b0a67a1a2b9a4fc95d025cac181504406ea42a35d6c1b184c0d4e38c92815022935fc55746c69c7c1'
             '2718b58dbbb15063bacb2bde6489e5b3c59afac4c0e0435b97fe720d42c711b6bcba926f67a8687878bd51373c9cf3adb1915a11666d79ccb220bf36e0788ab7'
             '8742e2eed421e2f29850e18616f435536c12036ff793f5682a3a8c980cf5dbfc88d17fd9539c87de15d9e4663dc3190f964f18a4722940465437927b6052abbf'
-            '2dc6b0ba8f7dbf19d2446c5c5f1823587de89f4e28e9595937dd51a87755099656f2acec50e3e2546ea633ad1bfd1c722e0c2b91eef1d609103d8abdc0a7cbaf')
+            '2dc6b0ba8f7dbf19d2446c5c5f1823587de89f4e28e9595937dd51a87755099656f2acec50e3e2546ea633ad1bfd1c722e0c2b91eef1d609103d8abdc0a7cbaf'
+            'SKIP')
